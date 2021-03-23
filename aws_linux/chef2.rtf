@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red170\green85\blue85;\red16\green158\blue98;\red170\green64\blue64;\red85\green85\blue85;\red170\green51\blue170;}
+\viewkind4\uc1\pard\f0\fs20 root@ip-172-31-32-254:~/chef-repo# vi apache.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ps -ef | grep apache\cf1\highlight2 
+\par \cf0\highlight0 root        2197    2079  0 16:33 pts/1    00:00:00 grep --color=auto \cf3 apache\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ls\cf1\highlight2 
+\par \cf0\highlight0 apache.rb  \cf4 hello.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo#\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# chef-apply apache.rb\cf1\highlight2 
+\par \cf0\highlight0 Recipe: (chef-apply cookbook)::(chef-apply recipe)\cf1\highlight2 
+\par \cf0\highlight0   * apt_package[Install Apache] action install\cf1\highlight2 
+\par \cf0\highlight0     - install version 2.4.41-4ubuntu3.1 of package apache2\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ps -ef | grep apache\cf1\highlight2 
+\par \cf0\highlight0 root        2802       1  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    2804    2802  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    2805    2802  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 root        3253    2079  0 16:39 pts/1    00:00:00 grep --color=auto \cf3 apache\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# vi apache.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# chef-apply apache.rb\cf1\highlight2 
+\par \cf0\highlight0 Recipe: (chef-apply cookbook)::(chef-apply recipe)\cf1\highlight2 
+\par \cf0\highlight0   * apt_package[remove Apache] action install (up to date)\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ps -ef | grep apache\cf1\highlight2 
+\par \cf0\highlight0 root        2802       1  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    2804    2802  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    2805    2802  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 root        3347    2079  0 16:42 pts/1    00:00:00 grep --color=auto \cf3 apache\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# vi apache.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# chef-apply apache.rb\cf1\highlight2 
+\par \cf0\highlight0 Recipe: (chef-apply cookbook)::(chef-apply recipe)\cf1\highlight2 
+\par \cf0\highlight0   * apt_package[purge Apache] action install (up to date)\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ps -ef | grep apache\cf1\highlight2 
+\par \cf0\highlight0 root        2802       1  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    2804    2802  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    2805    2802  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 root        3442    2079  0 16:43 pts/1    00:00:00 grep --color=auto \cf3 apache\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# vi apache.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# chef-apply apache.rb\cf1\highlight2 
+\par \cf0\highlight0 Recipe: (chef-apply cookbook)::(chef-apply recipe)\cf1\highlight2 
+\par \cf0\highlight0   * apt_package[action :purge Apache] action install (up to date)\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ps -ef | grep apache\cf1\highlight2 
+\par \cf0\highlight0 root        2802       1  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    2804    2802  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    2805    2802  0 16:39 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 root        3543    2079  0 16:45 pts/1    00:00:00 grep --color=auto \cf3 apache\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# vi apache.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# chef-apply apache.rb\cf1\highlight2 
+\par \cf0\highlight0 Recipe: (chef-apply cookbook)::(chef-apply recipe)\cf1\highlight2 
+\par \cf0\highlight0   * apt_package[Install Apache] action remove\cf1\highlight2 
+\par \cf0\highlight0     - remove package apache2\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ps -ef | grep apache\cf1\highlight2 
+\par \cf0\highlight0 root        3917    2079  0 16:47 pts/1    00:00:00 grep --color=auto \cf3 apache\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# mv apache.rb apache_uninstall.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ls\cf1\highlight2 
+\par \cf0\highlight0 apache_uninstall.rb  \cf4 hello.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# vi apache_install.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# chef-apply apache_install.rb\cf1\highlight2 
+\par \cf0\highlight0 Recipe: (chef-apply cookbook)::(chef-apply recipe)\cf1\highlight2 
+\par \cf0\highlight0   * apt_package[Install Apache] action install\cf1\highlight2 
+\par \cf0\highlight0     - install version 2.4.41-4ubuntu3.1 of package apache2\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ps -ef | grep apache\cf1\highlight2 
+\par \cf0\highlight0 root        4212       1  0 16:49 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    4215    4212  0 16:49 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 www-data    4216    4212  0 16:49 ?        00:00:00 /usr/sbin/\cf3 apache\cf0 2 -k start\cf1\highlight2 
+\par \cf0\highlight0 root        4438    2079  0 16:49 pts/1    00:00:00 grep --color=auto \cf3 apache\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# ls\cf1\highlight2 
+\par \cf0\highlight0 apache_install.rb  apache_uninstall.rb  \cf4 hello.rb\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# cat apache_install.rb\cf1\highlight2 
+\par \cf0\highlight0 package 'Install Apache' do\cf1\highlight2 
+\par \cf0\highlight0   case node[:platform]\cf1\highlight2 
+\par \cf0\highlight0   when 'redhat', 'centos'\cf1\highlight2 
+\par \cf0\highlight0     package_name 'httpd'\cf1\highlight2 
+\par \cf0\highlight0   when 'ubuntu', 'debian'\cf1\highlight2 
+\par \cf0\highlight0     package_name 'apache2'\cf1\highlight2 
+\par \cf0\highlight0   end\cf1\highlight2 
+\par \cf0\highlight0 end\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo# cat apache_uninstall.rb\cf1\highlight2 
+\par \cf0\highlight0 package 'Install Apache' do\cf1\highlight2 
+\par \cf0\highlight0   case node[:platform]\cf1\highlight2 
+\par \cf0\highlight0   when 'redhat', 'centos'\cf1\highlight2 
+\par \cf0\highlight0     package_name 'httpd'\cf1\highlight2 
+\par \cf0\highlight0   when 'ubuntu', 'debian'\cf1\highlight2 
+\par \cf0\highlight0     package_name 'apache2'\cf1\highlight2 
+\par \cf0\highlight0     action :remove\cf1\highlight2 
+\par \cf0\highlight0   end\cf1\highlight2 
+\par \cf0\highlight0 end\cf1\highlight2 
+\par \cf0\highlight0 root@ip-172-31-32-254:~/chef-repo#\cf1\highlight2 
+\par \cf5\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf6\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf5\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf7 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf7 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf7 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \pard\cf0\highlight0\f1 
+\par }
+ 

@@ -1,0 +1,6 @@
+[Macros]
+ls -la=12:0:0:ls -la|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+
+[MacrosHotkeys]
+ls -la=0
+

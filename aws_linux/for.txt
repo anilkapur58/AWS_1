@@ -1,0 +1,46 @@
+#!/bin/bash
+
+test_string="one two three four five six seven eight nine ten"
+
+for item in $test_string
+do 
+	echo "$item"
+done
+-----------
+#!/bin/bash
+
+FILE_NAME=/root/scripts/test.txt
+DIR_NAME=/opt/abc
+
+if [ -f $FILE_NAME ]; then
+        echo "Given file exists"
+else
+        echo "Given file doesnot exists"
+fi
+
+if [ -d $DIR_NAME ]; then
+        echo "Given directory exists"
+else
+        echo "Given directory doesnot exists"
+fi
+--------------
+
+#!/bin/bash
+BACKUPDIR=~/backup
+HOMEDIR="/home"
+BACKUPFILE=scripts.backup.`date +%F`.tar.gz
+THRESHOLD=7
+if [ ! -e $BACKUPDIR ];
+then
+echo Creating backup directory it does not exist
+mkdir /backup
+exit 0
+else
+COUNT=`ls $BACKUPDIR/home.* | wc -l`
+fi
+if [ $COUNT -le $THRESHOLD ];
+then
+tar -czvf $BACKUPDIR/$BACKUPFILE $HOMEDIR
+if [ $? != 0 ]; then echo Problems creating backup file; fi
+fi
+

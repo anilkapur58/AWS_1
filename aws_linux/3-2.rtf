@@ -1,0 +1,310 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red170\green64\blue64;\red56\green136\blue159;\red18\green124\blue155;\red170\green85\blue85;\red85\green85\blue85;}
+\viewkind4\uc1\pard\f0\fs20      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                        \cf3\f1\bullet  MobaXterm 20.6 \bullet  \cf0\f0                          \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?            \cf4 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf5 ec2-user\cf0 @\cf5 13.233.86.138                            \cf0\u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf6\f0 x\cf0   (disabled or not supported by server)     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf5\f0 192.168.0.106:0.0                         \cf0    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone            \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0        __|  __|_  )\cf1\highlight2 
+\par \cf0\highlight0        _|  (     /   Amazon Linux 2 AMI\cf1\highlight2 
+\par \cf0\highlight0       ___|\\___|___|\cf1\highlight2 
+\par 
+\par \cf0\highlight0 https://aws.amazon.com/amazon-linux-2/\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-37-147 ~]$ sudo -i\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# ls\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# clear\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# mkdir scripts\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# ls -la\cf1\highlight2 
+\par \cf0\highlight0 total 20\cf1\highlight2 
+\par \cf0\highlight0 dr-xr-x---  4 root root 118 Mar  2 13:01 \cf8 .\cf1\highlight2 
+\par \cf0\highlight0 dr-xr-xr-x 18 root root 257 Mar  2 12:46 \cf8 ..\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root  18 Oct 18  2017 .bash_logout\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root 176 Oct 18  2017 .bash_profile\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root 176 Oct 18  2017 .bashrc\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root 100 Oct 18  2017 .cshrc\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x  2 root root   6 Mar  2 13:01 \cf8 scripts\cf1\highlight2 
+\par \cf0\highlight0 drwx------  2 root root  29 Mar  2 12:46 \cf8 .ssh\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root 129 Oct 18  2017 .tcshrc\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# vi read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# chmod +x read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# sh read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 enter name:\cf1\highlight2 
+\par \cf0\highlight0 anil\cf1\highlight2 
+\par \cf0\highlight0 name entered: anil\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# vi read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# sh read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 username:anil\cf1\highlight2 
+\par \cf0\highlight0 username: anil\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# vi read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# sh read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 username:anil\cf1\highlight2 
+\par \cf0\highlight0 password:123\cf1\highlight2 
+\par \cf0\highlight0 username: anil\cf1\highlight2 
+\par \cf0\highlight0 password: 123\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# vi read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# sh read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 username:anil\cf1\highlight2 
+\par \cf0\highlight0 password:username: anil\cf1\highlight2 
+\par \cf0\highlight0 password: adf\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# vi read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# sh read_1.sh\cf1\highlight2 
+\par \cf0\highlight0 username:anil\cf1\highlight2 
+\par \cf0\highlight0 password:\cf1\highlight2 
+\par \cf0\highlight0 username: anil\cf1\highlight2 
+\par \cf0\highlight0 password: dfad\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# vi array_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# chmod +x array_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# sh array_1.sh\cf1\highlight2 
+\par \cf0\highlight0 enter names:\cf1\highlight2 
+\par \cf0\highlight0 an nk kj\cf1\highlight2 
+\par \cf0\highlight0 names: an, nk, kj\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# vi if_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# chmod +x if_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# sh if_1.sh\cf1\highlight2 
+\par \cf0\highlight0 enter A value:\cf1\highlight2 
+\par \cf0\highlight0 12\cf1\highlight2 
+\par \cf0\highlight0 enter B value:\cf1\highlight2 
+\par \cf0\highlight0 32\cf1\highlight2 
+\par \cf0\highlight0 if_1.sh: line 7: [: A: integer expression expected\cf1\highlight2 
+\par \cf0\highlight0 B greater than A\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# vi if_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# sh if_1.sh\cf1\highlight2 
+\par \cf0\highlight0 enter A value:\cf1\highlight2 
+\par \cf0\highlight0 23\cf1\highlight2 
+\par \cf0\highlight0 enter B value:\cf1\highlight2 
+\par \cf0\highlight0 12\cf1\highlight2 
+\par \cf0\highlight0 if_1.sh: line 7: [23: command not found\cf1\highlight2 
+\par \cf0\highlight0 B greater than A\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# vi if_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# sh if_1.sh\cf1\highlight2 
+\par \cf0\highlight0 enter A value:\cf1\highlight2 
+\par \cf0\highlight0 12\cf1\highlight2 
+\par \cf0\highlight0 #! /bin/bash\cf1\highlight2 
+\par \cf9\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par \cf0\highlight0 read A\cf1\highlight2 
+\par \cf10\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par \cf0\highlight0 read B\cf1\highlight2 
+\par \cf6\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \cf0\highlight0         echo "B greater than A"\cf1\highlight2 
+\par \cf0\highlight0 fi\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf8\highlight0 ~\cf1\highlight2 
+\par \cf0\highlight0 "if_1.sh" 11L, 153C\cf1\highlight2 
+\par \cf0\highlight0 Authenticating with public key "Imported-Openssh-Key: F:\\\\Devops-training\\\\AWS\\\\AWS_key1.pem"\cf1\highlight2 
+\par \cf0\highlight0      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                        \cf3\f1\bullet  MobaXterm 20.6 \bullet  \cf0\f0                          \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?            \cf4 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf5 ec2-user\cf0 @\cf5 13.233.86.138                            \cf0\u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf6\f0 x\cf0   (disabled or not supported by server)     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf5\f0 192.168.0.106:0.0                         \cf0    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone            \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Last login: Tue Mar  2 13:01:04 2021 from 49.207.213.57\cf1\highlight2 
+\par 
+\par \cf0\highlight0        __|  __|_  )\cf1\highlight2 
+\par \cf0\highlight0        _|  (     /   Amazon Linux 2 AMI\cf1\highlight2 
+\par \cf0\highlight0       ___|\\___|___|\cf1\highlight2 
+\par 
+\par \cf0\highlight0 https://aws.amazon.com/amazon-linux-2/\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-37-147 ~]$ sudo -i\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# ls\cf1\highlight2 
+\par \cf3\highlight0 array_1.sh\cf0   \cf3 if_1.sh\cf0   \cf3 read_1.sh\cf0   \cf8 scripts\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 ~]# cd scripts\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_2.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_2.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments 0\cf1\highlight2 
+\par \cf0\highlight0 if_2.sh: line 3: A: command not found\cf1\highlight2 
+\par \cf0\highlight0 if_2.sh: line 4: B: command not found\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_2.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_2.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments 0\cf1\highlight2 
+\par \cf0\highlight0 if_2.sh: line 3: A: command not found\cf1\highlight2 
+\par \cf0\highlight0 if_2.sh: line 4: B: command not found\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_2.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_2.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments 0\cf1\highlight2 
+\par \cf0\highlight0 if_2.sh: line 3: A: command not found\cf1\highlight2 
+\par \cf0\highlight0 21\cf1\highlight2 
+\par \cf0\highlight0 if_2.sh: line 5: B: command not found\cf1\highlight2 
+\par \cf0\highlight0 21\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_2.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_2.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments 0\cf1\highlight2 
+\par \cf0\highlight0 if_2.sh: line 3: A: command not found\cf1\highlight2 
+\par \cf0\highlight0 45\cf1\highlight2 
+\par \cf0\highlight0 if_2.sh: line 5: B: command not found\cf1\highlight2 
+\par \cf0\highlight0 65\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_2.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_2.sh\cf1\highlight2 
+\par \cf0\highlight0 no.of arguments: 0\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_2.sh 1 2\cf1\highlight2 
+\par \cf0\highlight0 no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_2.sh 1 2 3 5\cf1\highlight2 
+\par \cf0\highlight0 no.of arguments: 4\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_2.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_2.sh 12 23\cf1\highlight2 
+\par \cf0\highlight0 3 files to edit\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_2.sh 1 2\cf1\highlight2 
+\par \cf0\highlight0 no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0  B is greater than A\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_3.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# chmod +x if_3.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_3.sh 2\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 1\cf1\highlight2 
+\par \cf0\highlight0  this script required atleast two arguments\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_3.sh 2 3\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_3.sh 2 3 4\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 3\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_3.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_3.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 0\cf1\highlight2 
+\par \cf0\highlight0  this script required atleast two arguments\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_3.sh 2 4\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0 if_3.sh: line 9: a: command not found\cf1\highlight2 
+\par \cf0\highlight0 if_3.sh: line 10: b: command not found\cf1\highlight2 
+\par \cf0\highlight0  a is greater than b\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_3.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_3.sh 2 4\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0 if_3.sh: line 9: a: command not found\cf1\highlight2 
+\par \cf0\highlight0 if_3.sh: line 10: b: command not found\cf1\highlight2 
+\par \cf0\highlight0  a is greater than b\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_3.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_3.sh 2 4\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0  b is greater than a\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_3.sh 32 1\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0  a is greater than b\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_3.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh if_3.sh 32 1\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0   32 is greater than 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi return_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# chmod +x return_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh return_1.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0  3 is greater than 2\cf1\highlight2 
+\par \cf0\highlight0 return_1.sh: line 6: [RET_VAL: command not found\cf1\highlight2 
+\par \cf0\highlight0  there is some fault with command\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi return_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh return_1.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0  3 is greater than 2\cf1\highlight2 
+\par \cf0\highlight0 return_1.sh: line 6: [: RET_VAL: integer expression expected\cf1\highlight2 
+\par \cf0\highlight0  there is some fault with command\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi return_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh return_1.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0  3 is greater than 2\cf1\highlight2 
+\par \cf0\highlight0 return_1.sh: line 6: [0: command not found\cf1\highlight2 
+\par \cf0\highlight0  there is some fault with command\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi return_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh return_1.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0  3 is greater than 2\cf1\highlight2 
+\par \cf0\highlight0  the command excuted successfully\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# cat if_3.sh\cf1\highlight2 
+\par \cf0\highlight0 #! /bin/bash\cf1\highlight2 
+\par 
+\par \cf0\highlight0 echo " no.of arguments: $#"\cf1\highlight2 
+\par \cf0\highlight0  if [ $# -lt 2 ]; then\cf1\highlight2 
+\par \cf0\highlight0         echo " this script required atleast two arguments"\cf1\highlight2 
+\par \cf0\highlight0         exit\cf1\highlight2 
+\par \cf0\highlight0 fi\cf1\highlight2 
+\par 
+\par \cf0\highlight0 a=$1\cf1\highlight2 
+\par \cf0\highlight0 b=$2\cf1\highlight2 
+\par 
+\par \cf0\highlight0 if [ $a -gt $b ]; then\cf1\highlight2 
+\par \cf0\highlight0         echo "  $a is greater than $b "\cf1\highlight2 
+\par \cf0\highlight0 else\cf1\highlight2 
+\par \cf0\highlight0         echo " $b is greater than $a "\cf1\highlight2 
+\par \cf0\highlight0 fi\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# cat return_1.sh\cf1\highlight2 
+\par \cf0\highlight0 #! /bin/bash\cf1\highlight2 
+\par 
+\par \cf0\highlight0 ./if_3.sh 2 3\cf1\highlight2 
+\par \cf0\highlight0 RET_VAL=$?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 if [ $RET_VAL -eq 0 ]; then\cf1\highlight2 
+\par \cf0\highlight0         echo " the command excuted successfully "\cf1\highlight2 
+\par \cf0\highlight0 else\cf1\highlight2 
+\par \cf0\highlight0         echo " there is some fault with command "\cf1\highlight2 
+\par 
+\par \cf0\highlight0 fi\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi return_2.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_3.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# chmod +x return_2.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh return_1.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 2\cf1\highlight2 
+\par \cf0\highlight0  3 is greater than 2\cf1\highlight2 
+\par \cf0\highlight0  the command excuted successfully\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi if_3.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# vi return_1.sh\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# sh return_1.sh\cf1\highlight2 
+\par \cf0\highlight0  no.of arguments: 1\cf1\highlight2 
+\par \cf0\highlight0  this script required atleast two arguments\cf1\highlight2 
+\par \cf0\highlight0  there is some fault with command\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]# cat return_1.sh\cf1\highlight2 
+\par \cf0\highlight0 #! /bin/bash\cf1\highlight2 
+\par 
+\par \cf0\highlight0 ./if_3.sh 2\cf1\highlight2 
+\par \cf0\highlight0 RET_VAL=$?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 if [ $RET_VAL -eq 0 ]; then\cf1\highlight2 
+\par \cf0\highlight0         echo " the command excuted successfully "\cf1\highlight2 
+\par \cf0\highlight0 else\cf1\highlight2 
+\par \cf0\highlight0         echo " there is some fault with command "\cf1\highlight2 
+\par 
+\par \cf0\highlight0 fi\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-37-147 scripts]#\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 

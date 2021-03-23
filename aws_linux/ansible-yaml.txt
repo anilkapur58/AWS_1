@@ -1,0 +1,42 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - user: name=anilkapur
+---------------------------------------------------
+---
+- name: This play book install packages
+  hosts: all
+  become: true
+  tasks:
+  - name: install packages
+    yum:
+     name: tree
+     state: installed
+----------------------------------------------
+---
+- name: This playbook creates file/directory
+  hosts: all
+  become: true
+  tasks:
+  - name: creating a file
+    file:
+      path: /home/ansadmin/test
+      state: touch (directory) # to create directory
+---------------------------------------------------------
+
+---
+- name: this playbook install httpd
+  hosts: webservers
+  become: true
+  tasks:
+  - name: install package
+    yum:
+      name: httpd
+      state: installed
+
+  - name: start httpd service
+    service:
+      name: httpd
+      state: started
+

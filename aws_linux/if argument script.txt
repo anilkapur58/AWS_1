@@ -1,0 +1,68 @@
+#!binbash
+
+A=$1
+B=$2
+
+if [ $A -lt $B ]; then
+	echo Second argument is greater than First
+else
+	echo First argument is greater than Second
+fi
+
+
+#!/bin/bash
+
+echo "No.of arguments $#"
+
+A=$1
+B=$2
+
+if [ $A -lt $B ]; then
+	echo "Second argument is greater than First"
+else
+	echo "First argument is greater than Second"
+fi
+
+--------------------
+
+#!/bin/bash
+
+echo "No.of arguments $#"
+
+if [ $# -lt 2 ]; then
+	echo "This script requires atleast two arguments"
+	exit
+fi
+
+A=$1
+B=$2
+
+if [ $A -lt $B ]; then
+	echo "Second argument is greater than First"
+else
+	echo "First argument is greater than Second"
+fi
+---------------------
+
+#!/bin/bash
+
+./prog6.sh 3 9
+RET_VAL=$?
+
+if [ $RET_VAL -eq 0 ]; then
+	echo "The command executed Successfully"
+else
+	echo "There is some issue with the command"
+fi
+---------------
+
+#!/bin/bash
+
+./prog6.sh 3
+RET_VAL=$?
+
+if [ $RET_VAL -ne 0 ]; then
+	echo "The command executed Successfully"
+	exit -1
+fi
+
